@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Chaos Monkey Philosophy in Engineering — Ramaiah Kethana</title>
+    <meta
+      name="description"
+      content="Why resilient systems should be designed to survive inevitable failures."
+    />
+    <style>
+      :root {
+        color-scheme: dark;
+        --bg: #0b0d0c;
+        --text: #e8eef0;
+        --muted: #9aa5ad;
+        --line: #242827;
+        --accent: #66ff66;
+        --accent-soft: transparent;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+          "Liberation Mono", "Courier New", monospace;
+        line-height: 1.7;
+      }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        background: var(--bg);
+        color: var(--text);
+      }
+
+      main {
+        width: min(42rem, calc(100% - 2rem));
+        margin: 0 auto;
+        padding: 10vh 0 4rem;
+      }
+
+      a {
+        color: var(--accent);
+        text-decoration-color: var(--accent);
+        text-decoration-thickness: 0.08em;
+        text-underline-offset: 0.22em;
+      }
+
+      a:hover,
+      a:focus-visible {
+        color: var(--accent);
+      }
+
+      .back,
+      .meta,
+      footer {
+        color: var(--muted);
+        font-size: 0.9rem;
+      }
+
+      h1 {
+        margin: 2rem 0 1rem;
+        font-size: clamp(2.2rem, 9vw, 4.8rem);
+        line-height: 0.98;
+        letter-spacing: -0.07em;
+      }
+
+      article {
+        border-top: 1px solid var(--line);
+        margin-top: 2rem;
+        padding-top: 2rem;
+      }
+
+      p {
+        margin: 0 0 1.4rem;
+      }
+
+      h2 {
+        margin: 2rem 0 0.8rem;
+        font-size: 1rem;
+        color: var(--accent);
+      }
+
+      ul {
+        margin: 0 0 1.4rem;
+        padding-left: 1.2rem;
+      }
+
+      li {
+        margin: 0.35rem 0;
+      }
+
+      blockquote {
+        margin: 0 0 1.4rem;
+        padding-left: 1rem;
+        border-left: 2px solid var(--accent);
+        color: var(--text);
+      }
+
+      .source {
+        margin-top: 2rem;
+        padding-top: 1.2rem;
+        border-top: 1px solid var(--line);
+        color: var(--muted);
+      }
+
+      footer {
+        margin-top: 5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <a class="back" href="../index.html">← all posts</a>
+      <p class="meta"><time datetime="2026-07-21">2026-07-21</time></p>
+      <h1>Chaos Monkey Philosophy in Engineering</h1>
+
+      <article>
+        <p>
+          Chaos Monkey philosophy in engineering is based on one core idea:
+        </p>
+
+        <blockquote>
+          <p>Failures are inevitable — systems should be designed to survive them.</p>
+        </blockquote>
+
+        <h2>Why it matters:</h2>
+        <ul>
+          <li>Real production issues are unpredictable</li>
+          <li>Small failures can become major outages</li>
+          <li>Hidden dependencies often go unnoticed until incidents happen</li>
+          <li>Testing resilience early reduces downtime and recovery time</li>
+          <li>Teams gain confidence in deployments and infrastructure changes</li>
+        </ul>
+
+        <h2>Key principles:</h2>
+        <ul>
+          <li>Intentionally simulate failures before real incidents happen</li>
+          <li>Build self-healing and resilient systems</li>
+          <li>Remove single points of failure</li>
+          <li>Continuously validate production readiness</li>
+          <li>Improve reliability in cloud-native and microservices architectures</li>
+        </ul>
+
+        <p>
+          This mindset has become a major foundation for SRE, Kubernetes,
+          distributed systems, and modern reliability engineering practices.
+        </p>
+      </article>
+
+      <footer>Ramaiah Kethana / Made with &gt;3</footer>
+    </main>
+  </body>
+</html>
