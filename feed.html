@@ -1,7 +1,122 @@
-<html>
-	<body>
-    <h2>Feed</h2>
-    <a href="index.html">home</a>
-    <p>Feed data will update here</p>
-	</body>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Feed — Ramaiah Kethana</title>
+    <meta name="description" content="Recent notes from Ramaiah Kethana." />
+    <style>
+      :root {
+        color-scheme: light dark;
+        --bg: #f8f5ef;
+        --text: #171411;
+        --muted: #6d665e;
+        --line: #d8d0c4;
+        --accent: #8f3d24;
+        --accent-soft: #f1d8cc;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --bg: #15120f;
+          --text: #f1ece4;
+          --muted: #b6aa9e;
+          --line: #342d27;
+          --accent: #f09a73;
+          --accent-soft: #382419;
+        }
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+          "Liberation Mono", "Courier New", monospace;
+        line-height: 1.6;
+      }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        background:
+          radial-gradient(circle at 20% 10%, var(--accent-soft), transparent 28rem),
+          var(--bg);
+        color: var(--text);
+      }
+
+      main {
+        width: min(42rem, calc(100% - 2rem));
+        margin: 0 auto;
+        padding: 10vh 0 4rem;
+      }
+
+      a {
+        color: inherit;
+        text-decoration-color: var(--accent);
+        text-decoration-thickness: 0.08em;
+        text-underline-offset: 0.22em;
+      }
+
+      a:hover,
+      a:focus-visible {
+        color: var(--accent);
+      }
+
+      .back,
+      time,
+      footer {
+        color: var(--muted);
+      }
+
+      h1 {
+        margin: 2rem 0;
+        font-size: clamp(2.6rem, 10vw, 5.5rem);
+        line-height: 0.9;
+        letter-spacing: -0.08em;
+      }
+
+      ul {
+        list-style: none;
+        margin: 0;
+        padding: 1.5rem 0 0;
+        border-top: 1px solid var(--line);
+      }
+
+      li {
+        display: grid;
+        grid-template-columns: 7.5rem 1fr;
+        gap: 1rem;
+        padding: 0.55rem 0;
+      }
+
+      footer {
+        margin-top: 5rem;
+        font-size: 0.9rem;
+      }
+
+      @media (max-width: 34rem) {
+        li {
+          grid-template-columns: 1fr;
+          gap: 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <a class="back" href="index.html">← home</a>
+      <h1>feed.</h1>
+      <ul>
+        <li>
+          <time datetime="2026-07-21">2026-07-21</time>
+          <a href="posts/designing-products-secure-simple.html">
+            Designing Products That Are Secure and Simple
+          </a>
+        </li>
+      </ul>
+      <footer>Ramaiah Kethana / Made with &gt;3</footer>
+    </main>
+  </body>
 </html>
