@@ -1,8 +1,176 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ramaiah Kethana — Notes</title>
+    <meta
+      name="description"
+      content="A minimal personal blog and thought portal by Ramaiah Kethana."
+    />
+    <style>
+      :root {
+        color-scheme: light dark;
+        --bg: #f8f5ef;
+        --text: #171411;
+        --muted: #6d665e;
+        --line: #d8d0c4;
+        --accent: #8f3d24;
+        --accent-soft: #f1d8cc;
+      }
+      
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --bg: #15120f;
+          --text: #f1ece4;
+          --muted: #b6aa9e;
+          --line: #342d27;
+          --accent: #f09a73;
+          --accent-soft: #382419;
+        }
+      }
 
-<html>
-	<body>
-    <h2>Ramaiah lives here...</h2>
-    <h3>I am a Full Stack developer</h3>
-    <h3><a href="https://github.com/ramaiahkethana">Github</a>  <a href="https://instagram.com/ramaiahkethana">Instagram</a> <a href="feed.html">Feed</a></h3>
-	</body>
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+          "Liberation Mono", "Courier New", monospace;
+        line-height: 1.6;
+      }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        background:
+          radial-gradient(circle at 20% 10%, var(--accent-soft), transparent 28rem),
+          var(--bg);
+        color: var(--text);
+      }
+
+      main {
+        width: min(42rem, calc(100% - 2rem));
+        margin: 0 auto;
+        padding: 12vh 0 4rem;
+      }
+
+      a {
+        color: inherit;
+        text-decoration-color: var(--accent);
+        text-decoration-thickness: 0.08em;
+        text-underline-offset: 0.22em;
+      }
+
+      a:hover,
+      a:focus-visible {
+        color: var(--accent);
+      }
+
+      .eyebrow {
+        margin: 0 0 1.5rem;
+        color: var(--muted);
+        font-size: 0.9rem;
+      }
+
+      h1 {
+        margin: 0;
+        font-size: clamp(2.6rem, 10vw, 6rem);
+        line-height: 0.9;
+        letter-spacing: -0.08em;
+      }
+
+      .intro {
+        max-width: 32rem;
+        margin: 1.5rem 0 4rem;
+        color: var(--muted);
+        font-size: 1.05rem;
+      }
+
+      nav {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.8rem 1.2rem;
+        margin: 0 0 4rem;
+        color: var(--muted);
+      }
+
+      section {
+        border-top: 1px solid var(--line);
+        padding-top: 1.5rem;
+      }
+
+      h2 {
+        margin: 0 0 1rem;
+        font-size: 1rem;
+        font-weight: 700;
+        text-transform: lowercase;
+      }
+
+      .post-list {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      .post-list li {
+        display: grid;
+        grid-template-columns: 7.5rem 1fr;
+        gap: 1rem;
+        padding: 0.55rem 0;
+      }
+
+      time {
+        color: var(--muted);
+        white-space: nowrap;
+      }
+
+      footer {
+        margin-top: 5rem;
+        color: var(--muted);
+        font-size: 0.9rem;
+      }
+
+      @media (max-width: 34rem) {
+        main {
+          padding-top: 4rem;
+        }
+
+        .post-list li {
+          grid-template-columns: 1fr;
+          gap: 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <p class="eyebrow">ramaiahkethana.github.io</p>
+      <h1>notes from ramaiah.</h1>
+      <p class="intro">
+        A quiet place to sketch down product, engineering, security, and systems
+        thoughts as they arrive.
+      </p>
+
+      <nav aria-label="Elsewhere">
+        <a href="https://github.com/ramaiahkethana">github</a>
+        <a href="https://instagram.com/ramaiahkethana">instagram</a>
+        <a href="feed.html">feed</a>
+      </nav>
+
+      <section aria-labelledby="posts-heading">
+        <h2 id="posts-heading">posts</h2>
+        <ul class="post-list">
+          <li>
+            <time datetime="2026-07-21">2026-07-21</time>
+            <a href="posts/designing-products-secure-simple.html">
+              Designing Products That Are Secure and Simple
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <footer>Ramaiah Kethana / Made with &gt;3</footer>
+    </main>
+  </body>
 </html>
